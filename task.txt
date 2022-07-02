@@ -1,0 +1,10 @@
+1) install vs code 
+2) install following browsers
+    Firefox (default web browser)
+    Google Chrome 
+    Opera
+3) install following extensions
+    view in browser - Koppt Ho
+    google search - Kamesh Kotwani
+    Auto rename tag - Jun Han
+    notepad++ keymap - Micorsoft
