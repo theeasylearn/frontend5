@@ -1,0 +1,2 @@
+1) create change password form 
+2) create forgot password form 
