@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+</head>
+<body>
+    <form action="success.html" method="post" enctype="multipart/form-data">
+        <table align="center" width="50%" border="1" cellpadding="10">
+            <tr> 
+                <td>
+                    <input type="text" name="fullname" required placeholder="your fullname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>select gender</b> <br>
+                    <label for="male">
+                        <input id="male" type="radio" name="rdogender" value="1"> Male
+                    </label>
+                    <label for="female">
+                        <input id="female" type="radio" name="rdogender" value="0"> Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>select language you can speak, read, write</b> <br>
+                    <label for="gujarati">
+                        <input type="checkbox" name="gujarati" id="gujarati" value="1"> Gujarati
+                    </label>
+                    <label for="hindi">
+                        <input type="checkbox" name="hindi" id="hindi" value="2"> Hindi
+                    </label>
+                    <label for="english">
+                        <input type="checkbox" name="english" id="english" value="4"> English
+                    </label>
+                    <br>
+                    <label for="sanskrit">
+                        <input type="checkbox" name="gujarati" id="sanskrit" value="8"> Sanskrit
+                    </label>
+                    <label for="urdu">
+                        <input type="checkbox" name="urdu" id="urdu" value="16"> Urdu
+                    </label>
+                    <label for="marathi">
+                        <input type="checkbox" name="marathi" id="marathi" value="32"> Marathi
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="country"  required>
+                        <option value="">select country</option>
+                        <option value="1">India</option>
+                        <option value="2">US</option>
+                        <option value="3">Russia</option>
+                        <option value="4">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>you address</b> <br>
+                    <textarea cols="100"  rows=10 name="address" id="address">
+
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><b>select photo</b> <br>
+                    <input type="file" name="photo" required accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="create profile">
+                    <input type="reset" value="clear all">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
