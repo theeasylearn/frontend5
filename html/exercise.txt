@@ -1,2 +1,10 @@
 1) create change password form 
 2) create forgot password form 
+3) develop html page for checkout process as per below design 
+    https://www.oberlo.com/media/1604489891-shopify-checkout-2-1024x611.jpg?fm=webp&w=1824&fit=max
+
+4) develop html page for shaadi.com as per below design
+https://www.shaadi.com/
+
+5) develop html page for https://www.monsterindia.com/
+as per https://www.monsterindia.com/
