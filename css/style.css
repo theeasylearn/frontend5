@@ -1,0 +1,165 @@
+*
+{
+    margin: 0px;
+    padding:0px;
+}
+#header
+{
+    border:2px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color:darkblue;
+}
+#container 
+{
+   
+    display: flex;
+    min-height: 500px;
+}
+#footer
+{
+    background-color: #eeeeee;
+    padding: 20px 10px;
+    position: sticky;
+    bottom:0px;
+    left:0px;
+}
+
+#container>div  /* this style applies to only direct child of container  */
+{
+    border:1px solid black;
+}
+#menu
+{
+    width:15%;
+}
+#content 
+{
+    width:70%;
+}
+#sidebar 
+{
+    width:15%;
+}
+#header>div 
+{
+    border: 1px solid black;
+}
+#footer>ul 
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+#title 
+{
+    color:white;
+    text-transform: uppercase;
+    font-size:28px;
+    padding-top: 5px;
+    font-family: 'Teko', sans-serif;
+}
+#contact 
+{
+    color:white;
+    margin-right: 10px;
+    padding-top: 15px;
+    font-family: 'Arimo', sans-serif;
+}
+#contact>ul 
+{
+    list-style-type:none;
+}
+#contact>ul>li 
+{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#logo 
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#menu>ul 
+{
+    list-style-type: none;
+}
+#menu>ul>li 
+{
+    line-height: 250%;
+    background-color:darkblue;
+    margin-top: 20px;
+    padding-left: 5px;
+    width: 180px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+#menu>ul>li>a:link, #menu>ul>li>a:visited 
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'teko',sens-serif;
+    letter-spacing: 2px;
+}
+#menu>ul>li>a:hover 
+{
+    color:yellow;
+    font-size:large;
+}
+#menu>ul>li>a:active
+{
+    color:red;
+    font-size:large;
+} 
+.newsbox 
+{
+    background-color: darkblue;
+    color:white;
+    margin: 10px;
+    padding:10px;
+    letter-spacing: 1px;
+    text-align: justify;
+    box-shadow: 5px 5px 5px gray;
+}
+.newsbox>h3 
+{
+    background-color: white;
+    color:darkblue;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.newsbox>a:link 
+{
+    margin-top: 5px;
+    display: block;
+    background-color: white;
+    color:darkblue;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#content>h1 
+{
+    margin: 10px;
+    padding:10px;
+    color:darkblue;
+    text-transform: uppercase;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 2px solid darkblue;
+}
+#content>p 
+{
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 142%;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Arimo', sans-serif;
+    text-indent: 50px;
+    padding:0px 10px;
+    margin-top: 20px;
+}
