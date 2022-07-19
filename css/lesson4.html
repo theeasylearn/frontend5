@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color:gainsboro;
+        }
+        .red, .green, .blue 
+        {
+            height:200px;
+            width:200px;
+            border:2px solid black;
+            position: absolute;
+        }
+        .red 
+        {
+            background-color:red;
+            z-index:3;
+            background-image: url('images/flag.png');
+            /* background-repeat: repeat-x; */
+            background-repeat: no-repeat;
+            background-position: center center;
+            color:white;
+            font-size: 16px;
+            overflow: scroll;
+        }
+        .green 
+        {
+            top:100px;
+            left:100px;
+            background-color: green;
+            z-index: 2;
+            background-image: url('images/earth2.png');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .blue 
+        {
+            top:200px;
+            left:200px;
+            background-color: blue;
+            background-image: url('images/building.png');
+            background-repeat: no-repeat;
+            background-position: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque itaque ad, repellendus ab amet voluptatibus, corrupti corporis aspernatur reiciendis expedita laudantium, culpa reprehenderit nesciunt est illum repellat quae placeat adipisci quia quidem non eos. Cum nihil itaque, possimus distinctio nulla dolore reiciendis libero alias similique soluta repellendus id dolorum? Ipsum illum ab ullam eligendi libero laborum provident consequuntur corporis facere eum repellendus temporibus, repellat fugit soluta reiciendis modi earum? Obcaecati animi dolor perspiciatis voluptatibus vel sit deleniti nemo. Quas alias non quaerat dolorem facere expedita nisi, inventore quod cupiditate laborum corporis rerum ipsam. Illum blanditiis excepturi iste laudantium quas nemo, officia libero amet praesentium, deleniti voluptatibus. Quos minima deleniti nulla sequi architecto asperiores recusandae laboriosam eius, consequatur doloribus reprehenderit officia culpa ad ullam dolorum. Velit laboriosam quos aliquam inventore molestias amet quisquam animi obcaecati. Praesentium possimus deserunt iure deleniti alias repellat labore a, at aut commodi facere obcaecati sapiente nisi cum, quibusdam doloremque, hic voluptatum consectetur itaque. Ullam accusamus laboriosam impedit at, quae non consequatur totam, quod quasi explicabo eaque recusandae quibusdam, natus illo laborum. Ipsum at expedita, possimus atque numquam provident reprehenderit reiciendis blanditiis ullam consequuntur, sint, necessitatibus assumenda cum. Molestias, quam laboriosam. Laboriosam possimus ipsum quia iusto.
+    </div>
+    <div class="green"></div>
+    <div class="blue"></div>
+</body>
+</html>
