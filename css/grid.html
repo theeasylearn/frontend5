@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            margin:0px;
+            padding:0px;
+        }
+        body 
+        {
+            background-color: aliceblue;
+            /* border:2px solid red; */
+            height: 100vh;
+        }
+        #header 
+        {
+            grid-area: header;
+        }
+        #slider 
+        {
+            grid-area: slider;
+        }
+        #menu 
+        {
+            grid-area: menu;
+        }
+        #content 
+        {
+            grid-area: content;
+        }
+        #sidebar 
+        {
+            grid-area: sidebar;
+        }
+        #footer 
+        {
+            grid-area: footer;
+        }
+
+        .container
+        {
+            display: grid;
+            grid-template-rows: 1fr 4fr 8fr 1fr;
+            grid-template-columns: 1fr 6fr 1fr;
+            grid-template-areas: 
+            "header header header"
+            "slider slider slider"
+            "menu content sidebar"
+            "footer footer footer"
+        }
+
+        .container>div 
+        {
+            min-height: 50px;
+            background-color: beige;
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div id="header"></div>
+       <div id="slider"></div>
+       <div id="menu"></div>
+       <div id="content"></div>
+       <div id="sidebar"></div>
+       <div id="footer"></div>
+    </div>
+</body>
+</html>

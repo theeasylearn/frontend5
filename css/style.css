@@ -163,12 +163,20 @@
     padding:0px 10px;
     margin-top: 20px;
 }
+#products
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .product
 {
+    box-sizing: border-box;
     background-color: aliceblue;
     border:2px solid darkblue;
     padding:5px;
-    width:25%;
+    width:23%;
     text-align: center;
     box-shadow: 5px 5px 5px gray;
+    margin-bottom: 10px;
 }
