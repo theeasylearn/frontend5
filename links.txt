@@ -9,6 +9,10 @@ https://www.gettyimages.in/
 for images & icons 
 https://www.iconfinder.com
 
-font icon 
+for map (basic)
+https://medium.com/@nargessmi87/how-to-embede-open-street-map-in-a-webpage-like-google-maps-8968fdad7fe4
+
+advance 
+https://medium.com/@nargessmi87/how-to-customize-the-openstreetmap-marker-icon-and-binding-popup-ab2254bddec2
 
 

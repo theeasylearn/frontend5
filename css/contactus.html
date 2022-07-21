@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Teko:wght@700&display=swap" rel="stylesheet"> 
+    <!-- external stylesheet file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="images/web.png" height="64">
+        </div>
+        <div id="title">
+            <h1>the easylearn academy</h1>
+        </div>
+        <div id="contact">
+            <ul>
+                <li><i class="fa-solid fa-mobile-button"></i> 9662512857</li>
+                <li><i class="fa-solid fa-envelope"></i> theeasylearn@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="lesson1.html"><i class="fa-solid fa-hand-point-right"></i> Home</a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-hand-point-right"></i> About us</a></li>
+                <li><a href="mission-vision.html"><i class="fa-solid fa-hand-point-right"></i> Mission & Vision</a></li>
+                <li><a href="products.html"><i class="fa-solid fa-hand-point-right"></i> Products</a></li>
+                <li><a href="service.html"><i class="fa-solid fa-hand-point-right"></i> Service</a></li>
+                <li><a href="contactus.html"><i class="fa-solid fa-hand-point-right"></i> Contact us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Contact us</h1>
+            <p style="text-indent: 0px;">
+                <b>The easylearn academy</b> <br>
+                105, Eva surbhi, opp akshwarwadi,  <br>
+                waghwardi road, Bhavnagar - 364001 <br>
+                theeasylearn@gmail.com <br>
+                Phone :- 966212857
+            </p>
+            <h1>Map</h1>
+            <div id ="map" style = "width:100%; height:400px;"></div>
+        </div>
+        <div id="sidebar">
+            <div class="newsbox">
+                <h3>news heading</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maiores nesciunt excepturi quasi libero perspiciatis quaerat pariatur ipsa minima quo!
+                <a href="#">Read More</a>
+            </div>
+            <div class="newsbox">
+                <h3>news heading</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maiores nesciunt excepturi quasi libero perspiciatis quaerat pariatur ipsa minima quo!
+                <a href="#">Read More</a>
+            </div>
+            <div class="newsbox">
+                <h3>news heading</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maiores nesciunt excepturi quasi libero perspiciatis quaerat pariatur ipsa minima quo!
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="home.html"> Home</a></li>
+            <li><a href="aboutus.html"> About us</a></li>
+            <li><a href="mission-vision.html"> Mission & Vision</a></li>
+            <li><a href="products.html"> Products</a></li>
+            <li><a href="service.html"> Service</a></li>
+            <li><a href="contactus.html"> Contact us</a></li>
+        </ul>
+    </div>
+    <script src="https://kit.fontawesome.com/266b76cb57.js" crossorigin="anonymous"></script>
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script>
+        // Creating map options
+        var mapOptions = {
+        center: [21.75405,72.14376],
+        zoom: 14
+        }
+        // Creating a map object
+        var map = new L.map('map', mapOptions);
+        let iconOptions = {
+        title:"the easylearn academy",
+        }
+        let marker = new L.Marker([21.75405,72.14376],iconOptions);
+        marker.addTo(map);
+        // Creating a Layer object
+        var layer = new     L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        // Adding layer to the map
+        map.addLayer(layer);
+        </script>
+</body>
+</html>
