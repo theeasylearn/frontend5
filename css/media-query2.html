@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Lilita+One&display=swap" rel="stylesheet"> 
+    <style>
+        body 
+        {
+            background-color: #F0EBE3;
+        }
+        .news 
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .article
+        {
+            text-align: justify;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding:10px 5px;
+            letter-spacing: 1px;
+            line-height: 125%;
+            font-family: 'IBM Plex Serif', serif;
+            background-color: #E4DCCF;
+        }
+        .article>h3 
+        {
+            font-family: 'Lilita One', cursive;
+        }
+        /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+        @media (min-width: 1281px) {
+        /* code in this block will be applied only if device width>1281 */
+        }
+
+        /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+        @media (min-width: 1025px) and (max-width: 1280px) {
+        /* code in this block will be applied only if device width>1025 and <1280 */
+        }
+
+        /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+        @media (min-width: 768px) and (max-width: 1024px) {
+        /* code in this block will be applied only if device width>768 and <1024 */
+            .article
+            {
+                width: 50%;
+                font-size: large;
+            }
+            .article>h3 
+            {
+                font-size: x-large
+            }
+        }
+        /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
+
+        /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
+        @media (min-width: 320px) and (max-width: 767px) {
+            /* code in this block will be applied only if device width>320 and <480 */
+            .article
+            {
+                width: 100%;
+                font-size: larger;
+            }
+            .article>h3 
+            {
+                font-size: xx-large
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="article">
+            <h3>sports news</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum, explicabo error aut veritatis placeat nemo eligendi pariatur doloremque, quasi in possimus deleniti molestiae mollitia animi, eos et modi? Tempore voluptates harum possimus minus, omnis pariatur, illum totam sint, sequi blanditiis ut. Pariatur, facilis. Hic ex esse optio. Odit dolorem quasi laboriosam distinctio nostrum illum officiis tenetur ut quod reiciendis odio laborum officia exercitationem, repellat quo eum animi tempore amet ratione recusandae, fuga doloribus iusto consectetur? Minima eum repellat velit voluptatem odit, facere beatae quas ipsa amet assumenda nihil quaerat, impedit veritatis error! Iure qui nesciunt error eos enim, magni doloremque sapiente, explicabo consectetur dolore rem incidunt. Itaque dolorum quis iste cupiditate soluta, explicabo ratione recusandae sequi maxime quam error nesciunt exercitationem voluptatum provident minus doloremque labore ipsam quia, tempore nobis eius odit. Enim ipsa maxime ea laudantium dolor asperiores illum amet hic fugit tenetur! Dolores tempora ullam sed et nihil voluptas, consectetur molestiae! Quia dolorum cum non nostrum quam, quidem provident voluptas ullam, eveniet, facilis ad laudantium quas mollitia! Vero, voluptatum labore architecto ipsam earum explicabo saepe velit voluptate autem repudiandae et at dicta, officia corporis aliquam? Nisi quod facere, praesentium optio blanditiis aliquam recusandae aperiam unde ratione delectus dolore exercitationem minus illo ullam eligendi eum atque laudantium ducimus, neque placeat? Eveniet atque aliquam officia dolor nihil beatae qui porro officiis reiciendis corporis itaque sequi quo accusantium mollitia quis consequatur doloribus ut delectus excepturi dolorum, nostrum exercitationem doloremque similique non? Sunt voluptate laudantium et a iure provident nobis praesentium.</p>
+        </div>
+        <div class="article">
+            <h3>science news</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum, explicabo error aut veritatis placeat nemo eligendi pariatur doloremque, quasi in possimus deleniti molestiae mollitia animi, eos et modi? Tempore voluptates harum possimus minus, omnis pariatur, illum totam sint, sequi blanditiis ut. Pariatur, facilis. Hic ex esse optio. Odit dolorem quasi laboriosam distinctio nostrum illum officiis tenetur ut quod reiciendis odio laborum officia exercitationem, repellat quo eum animi tempore amet ratione recusandae, fuga doloribus iusto consectetur? Minima eum repellat velit voluptatem odit, facere beatae quas ipsa amet assumenda nihil quaerat, impedit veritatis error! Iure qui nesciunt error eos enim, magni doloremque sapiente, explicabo consectetur dolore rem incidunt. Itaque dolorum quis iste cupiditate soluta, explicabo ratione recusandae sequi maxime quam error nesciunt exercitationem voluptatum provident minus doloremque labore ipsam quia, tempore nobis eius odit. Enim ipsa maxime ea laudantium dolor asperiores illum amet hic fugit tenetur! Dolores tempora ullam sed et nihil voluptas, consectetur molestiae! Quia dolorum cum non nostrum quam, quidem provident voluptas ullam, eveniet, facilis ad laudantium quas mollitia! Vero, voluptatum labore architecto ipsam earum explicabo saepe velit voluptate autem repudiandae et at dicta, officia corporis aliquam? Nisi quod facere, praesentium optio blanditiis aliquam recusandae aperiam unde ratione delectus dolore exercitationem minus illo ullam eligendi eum atque laudantium ducimus, neque placeat? Eveniet atque aliquam officia dolor nihil beatae qui porro officiis reiciendis corporis itaque sequi quo accusantium mollitia quis consequatur doloribus ut delectus excepturi dolorum, nostrum exercitationem doloremque similique non? Sunt voluptate laudantium et a iure provident nobis praesentium.</p>
+        </div>
+        <div class="article">
+            <h3>technology news</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum, explicabo error aut veritatis placeat nemo eligendi pariatur doloremque, quasi in possimus deleniti molestiae mollitia animi, eos et modi? Tempore voluptates harum possimus minus, omnis pariatur, illum totam sint, sequi blanditiis ut. Pariatur, facilis. Hic ex esse optio. Odit dolorem quasi laboriosam distinctio nostrum illum officiis tenetur ut quod reiciendis odio laborum officia exercitationem, repellat quo eum animi tempore amet ratione recusandae, fuga doloribus iusto consectetur? Minima eum repellat velit voluptatem odit, facere beatae quas ipsa amet assumenda nihil quaerat, impedit veritatis error! Iure qui nesciunt error eos enim, magni doloremque sapiente, explicabo consectetur dolore rem incidunt. Itaque dolorum quis iste cupiditate soluta, explicabo ratione recusandae sequi maxime quam error nesciunt exercitationem voluptatum provident minus doloremque labore ipsam quia, tempore nobis eius odit. Enim ipsa maxime ea laudantium dolor asperiores illum amet hic fugit tenetur! Dolores tempora ullam sed et nihil voluptas, consectetur molestiae! Quia dolorum cum non nostrum quam, quidem provident voluptas ullam, eveniet, facilis ad laudantium quas mollitia! Vero, voluptatum labore architecto ipsam earum explicabo saepe velit voluptate autem repudiandae et at dicta, officia corporis aliquam? Nisi quod facere, praesentium optio blanditiis aliquam recusandae aperiam unde ratione delectus dolore exercitationem minus illo ullam eligendi eum atque laudantium ducimus, neque placeat? Eveniet atque aliquam officia dolor nihil beatae qui porro officiis reiciendis corporis itaque sequi quo accusantium mollitia quis consequatur doloribus ut delectus excepturi dolorum, nostrum exercitationem doloremque similique non? Sunt voluptate laudantium et a iure provident nobis praesentium.</p>
+        </div>
+        <div class="article">
+            <h3>stocks news</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum, explicabo error aut veritatis placeat nemo eligendi pariatur doloremque, quasi in possimus deleniti molestiae mollitia animi, eos et modi? Tempore voluptates harum possimus minus, omnis pariatur, illum totam sint, sequi blanditiis ut. Pariatur, facilis. Hic ex esse optio. Odit dolorem quasi laboriosam distinctio nostrum illum officiis tenetur ut quod reiciendis odio laborum officia exercitationem, repellat quo eum animi tempore amet ratione recusandae, fuga doloribus iusto consectetur? Minima eum repellat velit voluptatem odit, facere beatae quas ipsa amet assumenda nihil quaerat, impedit veritatis error! Iure qui nesciunt error eos enim, magni doloremque sapiente, explicabo consectetur dolore rem incidunt. Itaque dolorum quis iste cupiditate soluta, explicabo ratione recusandae sequi maxime quam error nesciunt exercitationem voluptatum provident minus doloremque labore ipsam quia, tempore nobis eius odit. Enim ipsa maxime ea laudantium dolor asperiores illum amet hic fugit tenetur! Dolores tempora ullam sed et nihil voluptas, consectetur molestiae! Quia dolorum cum non nostrum quam, quidem provident voluptas ullam, eveniet, facilis ad laudantium quas mollitia! Vero, voluptatum labore architecto ipsam earum explicabo saepe velit voluptate autem repudiandae et at dicta, officia corporis aliquam? Nisi quod facere, praesentium optio blanditiis aliquam recusandae aperiam unde ratione delectus dolore exercitationem minus illo ullam eligendi eum atque laudantium ducimus, neque placeat? Eveniet atque aliquam officia dolor nihil beatae qui porro officiis reiciendis corporis itaque sequi quo accusantium mollitia quis consequatur doloribus ut delectus excepturi dolorum, nostrum exercitationem doloremque similique non? Sunt voluptate laudantium et a iure provident nobis praesentium.</p>
+        </div>
+    </div>
+</body>
+</html>
