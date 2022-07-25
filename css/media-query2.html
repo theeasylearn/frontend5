@@ -27,18 +27,37 @@
             font-family: 'IBM Plex Serif', serif;
             background-color: #E4DCCF;
         }
-        .article>h3 
+        .article>h3 /* if h3 is direct child of .article */
         {
             font-family: 'Lilita One', cursive;
         }
         /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
-        @media (min-width: 1281px) {
-        /* code in this block will be applied only if device width>1281 */
+        @media (min-width: 1281px) 
+        {
+            /* code in this block will be applied only if device width>1281 */
+            .article 
+            {
+                width:25%;
+                font-size: medium;
+            }
+            .article>h3 
+            {
+                font-size: large
+            }
         }
 
         /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
         @media (min-width: 1025px) and (max-width: 1280px) {
-        /* code in this block will be applied only if device width>1025 and <1280 */
+            /* code in this block will be applied only if device width>1025 and <1280 */
+            .article 
+            {
+                width:33.33%;
+                font-size: medium;
+            }
+            .article>h3 
+            {
+                font-size: large
+            }
         }
 
         /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
@@ -87,6 +106,10 @@
         </div>
         <div class="article">
             <h3>stocks news</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum, explicabo error aut veritatis placeat nemo eligendi pariatur doloremque, quasi in possimus deleniti molestiae mollitia animi, eos et modi? Tempore voluptates harum possimus minus, omnis pariatur, illum totam sint, sequi blanditiis ut. Pariatur, facilis. Hic ex esse optio. Odit dolorem quasi laboriosam distinctio nostrum illum officiis tenetur ut quod reiciendis odio laborum officia exercitationem, repellat quo eum animi tempore amet ratione recusandae, fuga doloribus iusto consectetur? Minima eum repellat velit voluptatem odit, facere beatae quas ipsa amet assumenda nihil quaerat, impedit veritatis error! Iure qui nesciunt error eos enim, magni doloremque sapiente, explicabo consectetur dolore rem incidunt. Itaque dolorum quis iste cupiditate soluta, explicabo ratione recusandae sequi maxime quam error nesciunt exercitationem voluptatum provident minus doloremque labore ipsam quia, tempore nobis eius odit. Enim ipsa maxime ea laudantium dolor asperiores illum amet hic fugit tenetur! Dolores tempora ullam sed et nihil voluptas, consectetur molestiae! Quia dolorum cum non nostrum quam, quidem provident voluptas ullam, eveniet, facilis ad laudantium quas mollitia! Vero, voluptatum labore architecto ipsam earum explicabo saepe velit voluptate autem repudiandae et at dicta, officia corporis aliquam? Nisi quod facere, praesentium optio blanditiis aliquam recusandae aperiam unde ratione delectus dolore exercitationem minus illo ullam eligendi eum atque laudantium ducimus, neque placeat? Eveniet atque aliquam officia dolor nihil beatae qui porro officiis reiciendis corporis itaque sequi quo accusantium mollitia quis consequatur doloribus ut delectus excepturi dolorum, nostrum exercitationem doloremque similique non? Sunt voluptate laudantium et a iure provident nobis praesentium.</p>
+        </div>
+        <div class="article">
+            <h3>war news</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum, explicabo error aut veritatis placeat nemo eligendi pariatur doloremque, quasi in possimus deleniti molestiae mollitia animi, eos et modi? Tempore voluptates harum possimus minus, omnis pariatur, illum totam sint, sequi blanditiis ut. Pariatur, facilis. Hic ex esse optio. Odit dolorem quasi laboriosam distinctio nostrum illum officiis tenetur ut quod reiciendis odio laborum officia exercitationem, repellat quo eum animi tempore amet ratione recusandae, fuga doloribus iusto consectetur? Minima eum repellat velit voluptatem odit, facere beatae quas ipsa amet assumenda nihil quaerat, impedit veritatis error! Iure qui nesciunt error eos enim, magni doloremque sapiente, explicabo consectetur dolore rem incidunt. Itaque dolorum quis iste cupiditate soluta, explicabo ratione recusandae sequi maxime quam error nesciunt exercitationem voluptatum provident minus doloremque labore ipsam quia, tempore nobis eius odit. Enim ipsa maxime ea laudantium dolor asperiores illum amet hic fugit tenetur! Dolores tempora ullam sed et nihil voluptas, consectetur molestiae! Quia dolorum cum non nostrum quam, quidem provident voluptas ullam, eveniet, facilis ad laudantium quas mollitia! Vero, voluptatum labore architecto ipsam earum explicabo saepe velit voluptate autem repudiandae et at dicta, officia corporis aliquam? Nisi quod facere, praesentium optio blanditiis aliquam recusandae aperiam unde ratione delectus dolore exercitationem minus illo ullam eligendi eum atque laudantium ducimus, neque placeat? Eveniet atque aliquam officia dolor nihil beatae qui porro officiis reiciendis corporis itaque sequi quo accusantium mollitia quis consequatur doloribus ut delectus excepturi dolorum, nostrum exercitationem doloremque similique non? Sunt voluptate laudantium et a iure provident nobis praesentium.</p>
         </div>
     </div>
