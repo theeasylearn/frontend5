@@ -18,3 +18,9 @@ https://medium.com/@nargessmi87/how-to-customize-the-openstreetmap-marker-icon-a
 bootstrap 
 https://getbootstrap.com/
 
+bootstrap ready made example (snippets)
+https://bootsnipp.com
+
+cheetsheet
+https://bootstrap-cheatsheet.themeselection.com/
+
