@@ -1,0 +1,22 @@
+create a web page with bootstrap that will display products  
+    4 news per row for large screen
+    3 news per row for medium screen
+    2 news per row  for small screen
+    1 news per row  for extra small screen
+each news has heading, some text and read more link with blug background color.
+
+create image gallary with bootstrap
+    6 images per row for extra large screen
+    4 images per row for large screen
+    3 images per row  for medium screen
+    2 images per row  for small screen
+    1 images per row  for extra small screen
+
+create webpage with bootstrap to display 
+    4 product per line on large screen
+    3 product per line on medium screen
+    2 product per line on small screen
+    1 product per line on extra small screen
+each product should be display at image at top followed by product name, product features and add to cart button. it should look like below 
+https://freefrontend.com/assets/img/bootstrap-product-cards/bootstrap-4-product-detail-window-template.jpg
+
