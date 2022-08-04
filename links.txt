@@ -24,3 +24,6 @@ https://bootsnipp.com
 cheetsheet
 https://bootstrap-cheatsheet.themeselection.com/
 
+font awasome icons 
+<script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+
