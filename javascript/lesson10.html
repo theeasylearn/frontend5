@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional Operations</h1>
+    <script>
+        let message;
+        let age = parseInt(prompt("Enter age",'0'));
+        console.log(age);
+        // if(age>=18)
+        // {
+        //     message = "<font color='blue'>you are eligible for driving licence and voting</font>";
+        // }
+        // else 
+        // {
+        //     message = "<font color='red'>you are not eligible for driving licence and voting</font>"
+        // }
+        message = (age>=18) ? "<font color='blue'>you are eligible for driving licence and voting</font>" : "<font color='red'>you are not eligible for driving licence and voting</font>";
+        document.write(message);
+    </script>
+</body>
+</html>
