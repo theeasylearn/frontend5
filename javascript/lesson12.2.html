@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">output will come here</h1>
+    <script>
+        var age = parseInt(prompt("what is your age?",'1'));
+        var tag = document.getElementById("heading");
+        if (age<18)
+        {
+            tag.innerHTML = "<font color='red'>you are not eligible for voting and driving licence</font>";
+        }
+        else 
+        {
+            tag.innerHTML = "<font color='blue'>congratulation! you are  eligible for voting and driving licence</font>";
+        }
+    </script>
+</body>
+</html>

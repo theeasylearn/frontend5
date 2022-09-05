@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function in javascript</h1> 
+    <hr>
+    <div id="output">output will come here</div>
+<script>
+    //create function 
+    function add(num1,num2)
+    {
+        var result = num1 + num2; //result is local variable
+        return result;
+    }
+    function sub(num1,num2)
+    {
+        var result = num1 - num2; //result is local variable
+        return result;
+    }
+    function mul(a,b)
+    {
+        return a * b;
+    }
+    function div(x,y)
+    {
+        return x/y;
+    }
+    //input 
+    var num1 = parseInt(prompt("enter first number"));
+    var num2 = parseInt(prompt("enter second number"));
+
+    //call function 
+    var result = add(num1,num2);
+    var result2 = sub(num1,num2);
+    var result3 = mul(num1,num2);
+    var result4 = div(num1,num2);
+    var output = document.getElementById("output");
+    output.innerHTML = "addition = " + result + "<br/>";
+    output.innerHTML += "substraction = " + result2 + "<br/>";
+    output.innerHTML += "multiplication = " + result3 + "<br/>";
+    output.innerHTML += "division = " + result4 + "<br/>";
+    
+</script>
+</body>
+</html>

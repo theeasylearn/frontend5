@@ -1,2 +1,12 @@
 1) develop web page using javascript to display your name and address using alert dialogbox of javascript.
 
+2) write a program to create function that will return area of triangle using given height and base as input 
+
+
+3) write a program to create function that will return farenheit of given ceilcius 
+
+4) write a program to function that return reverse of given two digit number 
+input : 45 
+output  54
+
+
