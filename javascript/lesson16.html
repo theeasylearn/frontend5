@@ -12,35 +12,34 @@
     <div id="output">output will come here</div>
 <script>
     //create/define function 
+    var result1,result2,result3,result4;
     function add(num1,num2)
     {
-        var result = num1 + num2; //result is local variable
-        return result;
+        result1 = num1 + num2; //result is local variable
     }
     function sub(num1,num2)
     {
-        var result = num1 - num2; //result is local variable
-        return result;
+        result2 = num1 - num2; //result is local variable
     }
     function mul(a,b)
     {
-        return a * b;
+       result3 = a * b;
     }
     function div(x,y)
     {
-        return x/y;
+        result4 = x/y;
     }
     //input 
     var num1 = parseInt(prompt("enter first number"));
     var num2 = parseInt(prompt("enter second number"));
 
     //call function 
-    var result = add(num1,num2);
-    var result2 = sub(num1,num2);
-    var result3 = mul(num1,num2);
-    var result4 = div(num1,num2);
+    add(num1,num2);
+    sub(num1,num2);
+    mul(num1,num2);
+    div(num1,num2);
     var output = document.getElementById("output");
-    output.innerHTML = "addition = " + result + "<br/>";
+    output.innerHTML = "addition = " + result1 + "<br/>";
     output.innerHTML += "substraction = " + result2 + "<br/>";
     output.innerHTML += "multiplication = " + result3 + "<br/>";
     output.innerHTML += "division = " + result4 + "<br/>";

@@ -9,4 +9,8 @@
 input : 45 
 output  54
 
+5) write a program to calculate and return bmi of given weight and height (foot,inch) using arrow functions 
+
+6) write a program to calculate and return qube of given number using arrow function 
+7) write a program to calculate and return square root of given number  using arrow functions  
 

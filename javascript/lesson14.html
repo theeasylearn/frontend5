@@ -12,33 +12,33 @@
     <div id="output">output will come here</div>
 <script>
     //create/define function 
-    function add(num1,num2)
-    {
+    let add = function(num1,num2){
         var result = num1 + num2; //result is local variable
         return result;
     }
-    function sub(num1,num2)
+    let sub = function(num1,num2)
     {
         var result = num1 - num2; //result is local variable
         return result;
     }
-    function mul(a,b)
-    {
+    let mul = function(a,b){
         return a * b;
     }
-    function div(x,y)
-    {
-        return x/y;
-    }
+    let div = function(x,y) {   return x/y; }
+
+    //creating alias for functions
+    let division = div;
+    let addition = add;
+
     //input 
     var num1 = parseInt(prompt("enter first number"));
     var num2 = parseInt(prompt("enter second number"));
 
     //call function 
-    var result = add(num1,num2);
+    var result = addition(num1,num2); //using alias to call functions
     var result2 = sub(num1,num2);
     var result3 = mul(num1,num2);
-    var result4 = div(num1,num2);
+    var result4 = division(num1,num2);  //using alias to call functions
     var output = document.getElementById("output");
     output.innerHTML = "addition = " + result + "<br/>";
     output.innerHTML += "substraction = " + result2 + "<br/>";
