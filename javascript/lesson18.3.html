@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<style>
+    .red-border 
+    {
+        border:2px solid red;
+    }
+    .blue-border 
+    {
+        border:2px solid blue;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                       <h3>DOM 2nd way of event handling</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="myform" action="success.html" method="post">
+                              <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="oldpassword" placeholder="Old Password">
+                                <label for="oldpassword">Old Password</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="newpassword" placeholder="New Password">
+                                <label for="newpassword">New Password</label>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="newpassword2" placeholder="Confirm Password">
+                                <label for="newpassword2">Confirm Password</label>
+                              </div>
+                              <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-danger">Change Password</button>
+                                <button type="reset" class="btn btn-warning">Clear all</button>
+                              </div>
+                              <div id="output">
+
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+    let myform = document.querySelector("#myform");
+    let oldpassword = document.querySelector("#oldpassword");
+    let newpassword = document.querySelector("#newpassword");
+    let newpassword2 = document.querySelector("#newpassword2");
+    let textboxes = document.getElementsByClassName("form-control");
+    console.log(textboxes);
+    var index=0;
+    while(index<textboxes.length)
+    {   
+        textboxes[index].addEventListener("blur",function(){
+            if(this.value=="")
+            {
+                this.className = "red-border form-control";
+            }
+            else 
+            {
+                this.className = "blue-border form-control";
+            }
+        },false);
+        index=index+1;
+    }
+    /*
+     let newpassword = document.getElementById("newpassword");
+     let newpassword2 = document.getElementById("newpassword2");
+    */
+    myform.onsubmit = function(){
+        // alert("form submitted");
+        if(oldpassword.value=="")
+        {
+            alert("old password is required");
+            return false;
+        }
+        else if(newpassword.value=="")
+        {
+            alert("new password is required");
+            return false;
+        }
+        else if(newpassword2.value=="")
+        {
+            alert("confirm password is required");
+            return false;
+        }
+        else if(newpassword.value != newpassword2.value)
+        {
+            alert("new password and confirm password is not same");
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+</script>
+</body>
+</html>

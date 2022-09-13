@@ -1,0 +1,65 @@
+<html>
+<head>
+  <style>
+    /* internal stylesheet */
+    div /* type selector */ 
+    {
+      color: white;    
+      display: flex;   
+      justify-content: center;
+      align-items: center;  
+      flex-direction: column;
+    }
+    h2  /* type selector */ 
+    {  
+        color: black;  
+    }
+    #grandparent /* id selector */
+    { 
+      background-color: orange;    
+      width: 300px;    
+      height: 300px;
+    }
+    #parent  /* id selector */
+    {
+      color:black !important;   
+      background-color: white;
+      width: 200px;          
+      height: 200px;
+    }
+    #child  /* id selector */
+    {
+      background-color: green;  
+      width: 100px;  
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div id="grandparent">GrandParent
+      <div id="parent">Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+  </div>
+  <script>
+      // let grandparent = document.getElementById("grandparent");
+      let grandparent = document.querySelector("#grandparent");
+      let parent = document.querySelector("#parent");
+      let child = document.querySelector("#child");
+
+      //3rd way of handling event 
+      child.addEventListener("click",function(){
+        alert("child event trigger....");
+      },false);
+      parent.addEventListener("click",function(){
+        alert("parent event trigger.....");
+      },false)
+      grandparent.addEventListener("click",function(){
+        alert("grandparent event triggered.....");
+      },false);
+  </script>
+</body>
+</html>
+
