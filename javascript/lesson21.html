@@ -26,26 +26,26 @@
                                 <th width="25%">JavaScript</th>
                                 <th>total</th>
                             </tr>
-                            <tr>
+                            <tr class="student">
                                 <td>Alex</td>
                                 <td class="subject">22</td>
                                 <td class="subject">33</td>
                                 <td class="subject">44</td>
-                                <td class="total"></td>
+                                <td class="total">99</td>
                             </tr>
-                            <tr>
+                            <tr  class="student">
                                 <td>bimal</td>
                                 <td class="subject">11</td>
                                 <td class="subject">22</td>
                                 <td class="subject">33</td>
-                                <td class="total"></td>
+                                <td class="total">66</td>
                             </tr>
-                            <tr>
+                            <tr  class="student">
                                 <td>Chintan</td>
                                 <td class="subject">50</td>
                                 <td class="subject">60</td>
                                 <td class="subject">70</td>
-                                <td class="total"></td>
+                                <td class="total">180</td>
                             </tr>
                         </table>
                     </div>
@@ -57,19 +57,48 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script>
     var subjects = document.getElementsByClassName("subject"); //return array which has all the tags with class subject
-    var currentmarks= document.getElementById("marks");
-    console.log(subjects);
+    //console.log(subjects);
     var size = subjects.length; //length return size of array 9
     var index=0;
     while(index<size)
     {
         subjects[index].addEventListener("click",function(e){
             var marks = e.target.innerText;
-            console.log(marks);
             e.target.innerHTML = "<input type=number id=currentmarks class=form-control value='" + marks + "' />";
-            var currentmarks= document.getElementById("marks");
+            var currentmarks= document.getElementById("currentmarks");
+            currentmarks.addEventListener("blur",function(event){
+                console.log(event);
+                e.target.innerText = event.target.value;
+                CalculateTotal();
+            },false);
+            currentmarks.addEventListener("mouseout",function(event){
+                console.log(event);
+                e.target.innerText = event.target.value;
+                CalculateTotal();
+            },false);
         },false);
         index++; //index=index + 1
+    }
+    function CalculateTotal()
+    {
+        var students = document.getElementsByClassName("student");
+        var size = students.length;
+        var index =0;
+        while(index<size)
+        {
+            var StudentsMarks = students[index].getElementsByClassName("subject");
+            var marksize =  StudentsMarks.length;
+            var position = 0;
+            var MarksTotal = 0;
+            while(position<marksize)
+            {
+                MarksTotal= MarksTotal + parseInt(StudentsMarks[position].innerText);
+                position++; //position = position + 1
+            }
+            var total = students[index].getElementsByClassName("total");
+            total[0].innerText = MarksTotal;
+            index++;
+        }
     }
 </script>
 </body>
