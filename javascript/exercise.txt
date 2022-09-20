@@ -18,3 +18,11 @@ output  54
 
 9) write a program to findout develop EMI Calculator using html, 1st way o handling event and external javascript
 9) write a program to findout develop SIP Calculator using html, 1st way o handling event and external javascript
+
+10) write a program to create mymath object using first method to create object. this object should have 2 variables. num1 and num2. and it has following methods 
+addition
+substraction
+multiplication
+division
+
+each method will display output inside html tag. 
