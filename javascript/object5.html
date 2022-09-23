@@ -25,8 +25,7 @@
                                     <input type="text" id="txtname" class="form-control" placeholder="name" required> &nbsp;
                                     <input type="number" id="txtage" class="form-control" placeholder="age" required>&nbsp;
                                     <input type="number" id="txtweight" class="form-control" placeholder="weight" required>&nbsp;
-                                    <input id="add" type="button" class="btn btn-primary" value="add" >&nbsp;
-                                     
+                                    <button id="add" type="button" class="btn btn-primary">Add</button>
                                 </div>
                             </div>
                         </form>     
@@ -40,7 +39,7 @@
                                             <th>Name</th>
                                             <th>Age</th>
                                             <th>Weight</th>
-                                            <th></th>
+                                            <th>Operation</th>
                                         </tr>
                                     </thead>
                                     <tbody id="output">
@@ -63,7 +62,7 @@
     var txtname = document.getElementById("txtname");
     var txtage = document.getElementById("txtage");
     var txtweight = document.getElementById("txtweight");
-
+    var tdlist;
     var count=1;
     //create class
     class Student
@@ -77,7 +76,7 @@
         }
         AddRow()
         {
-            var message = `<tr><td>${count}</td><td>${this.name}</td><td>${this.age}</td><td>${this.weight}</td><td><button type='button' class='btn btn-danger'>Delete</button></td></tr>`;
+            var message = `<tr id=${count}><td>${count}</td><td>${this.name}</td><td>${this.age}</td><td>${this.weight}</td><td><button class='btn btn-info' onclick='EditStudent(${count})'>Edit</button>&nbsp;<button type='button' class='btn btn-danger' onclick="DeleteStudent(${count});">Delete</button></td></tr>`;
             output.innerHTML += message;
             count = count + 1;
         }
@@ -87,13 +86,43 @@
         var name = txtname.value;
         var age = txtage.value;
         var weight = txtweight.value;
-        const s1 = new Student(name,age,weight);
-        s1.AddRow();
+        if(add.innerHTML == "Add")
+        {
+            const s1 = new Student(name,age,weight);
+            s1.AddRow();
+        }
+        else 
+        {
+            tdlist[1].innerHTML = name;
+            tdlist[2].innerHTML = age;
+            tdlist[3].innerHTML = weight;
+            add.innerHTML = "Add";
+            add.className = "btn btn-primary";
+        }
         txtname.value = "";
         txtage.value = "";
         txtweight.value = "";
     },false);
-
+    function DeleteStudent(rowid)
+    {
+        console.log(rowid);
+        document.getElementById(rowid).remove();
+    }
+    function EditStudent(rowid)
+    {
+        // console.log(rowid);
+        var row = document.getElementById(rowid);
+        tdlist = row.getElementsByTagName("td");
+        var name = tdlist[1].innerHTML;
+        var age = tdlist[2].innerHTML;
+        var weight = tdlist[3].innerHTML;
+       
+        txtname.value = name;
+        txtage.value = age;
+        txtweight.value = weight;
+        add.innerHTML = "Save changes";
+        add.className = "btn btn-warning";         
+    }
 </script>
 </body>
 </html>
