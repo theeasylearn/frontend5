@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form 
+        {
+            background-color: aliceblue;
+            padding:10px;
+            width:50%;
+            margin:auto;
+        }
+        input 
+        {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="lesson1.html" method="post">
+        <h1>Login Form</h1> <hr>
+        <label for="">
+            select birthdate
+            <input type="date" max="2022-10-01"  min="1922-10-01"  required>
+        </label>
+        <input type="number" placeholder="weight" min="1" max="100" required>
+        <input type="file" multiple accept="image/*">
+        <input type="text" placeholder="aadhar card" pattern="[0-9]{12}">
+        <input type="text" placeholder="credit card number" pattern="[0-9]{13,16}">
+        <input type="submit" value="submit form" >
+    </form>
+</body>
+</html>
