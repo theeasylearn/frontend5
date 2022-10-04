@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>get user location using javascript</h1>
+    <button type="button" id="btngetlocation">Get user's Location</button>
+    <h2 id="output">
+        user location will be displayed here 
+    </h2>
+<script>
+    let btngetlocation = document.getElementById("btngetlocation");
+    let output = document.getElementById("output");
+    btngetlocation.addEventListener("click",function(){
+        console.log("click event generated....");
+        //navigator is inbuilt object
+        navigator.geolocation.getCurrentPosition(showPosition);
+    },false);
+    function showPosition(location)
+    {
+        console.log(location);
+        output.innerHTML = "Latitude = " + location.coords.latitude + "<br> Longitude = " + location.coords.longitude + "<br/> accurary " + location.coords.accuracy;
+    }
+
+</script>
+</body>
+</html>

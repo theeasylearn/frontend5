@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+    <h1>get user location using  display it on map</h1>
+    <button type="button" id="btngetlocation">Get user's Location</button>
+    <div id="map" style = "width:100%; height:400px;">
+        
+    </div>
+<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script>
+    let btngetlocation = document.getElementById("btngetlocation");
+    let output = document.getElementById("output");
+    btngetlocation.addEventListener("click",function(){
+        console.log("click event generated....");
+        //navigator is inbuilt object
+        navigator.geolocation.getCurrentPosition(showPosition);
+    },false);
+    function showPosition(location)
+    {
+        var mapOptions = {
+        center: [location.coords.latitude,location.coords.longitude],
+        zoom: 14
+        }
+        // Creating a map object
+        var map = new L.map('map', mapOptions);
+        let iconOptions = {
+        title:"the easylearn academy",
+        }
+        let marker = new L.Marker([location.coords.latitude,location.coords.longitude],iconOptions);
+        marker.addTo(map);
+        // Creating a Layer object
+        var layer = new     L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        // Adding layer to the map
+        map.addLayer(layer);
+    }
+
+</script>
+</body>
+</html>
