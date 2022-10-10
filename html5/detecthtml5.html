@@ -10,12 +10,12 @@
     <h1>Detect HTML 5 feature is supported or not </h1> <hr/>
     <h3 id="result"></h3>
     <h3 id="result2"></h3>
-    <script src="feature.min.js"></script>
+    <script src="modernizr-custom.js"></script>
     <script>
         //detect canvas tag is supported or not 
         let result = document.getElementById("result");
         let result2 = document.getElementById("result2");
-        if(feature.canvas)
+        if(Modernizr.canvas)
         {
             console.log("your browser does support canvas tag");
             result.innerHTML = "your browser does support canvas tag";
@@ -26,7 +26,7 @@
             result.innerHTML = "your browser does not support canvas tag";
         }
 
-        if(feature.localStorage)
+        if(Modernizr.localStorage)
         {
             result2.innerHTML = "your browser does support localstorage";
         }
