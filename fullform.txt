@@ -1,3 +1,4 @@
 short form      | full form 
 &nbsp;             non breaking space 
-HTML               hypertext markup language 
+HTML               hypertext markup language
+
