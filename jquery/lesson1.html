@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .student{
+            background-color: aliceblue;
+        }
+        .teacher{
+            background-color: antiquewhite;
+        }
+        .student, .teacher 
+        {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <p class="border p-3 shadow">
+                    <b>first</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo vero aliquid harum officia qui, delectus, veritatis deserunt inventore, iusto aliquam enim distinctio obcaecati porro tempore facere. Temporibus, iste debitis.
+                </p>
+                <p class="border p-3 shadow">
+                    <b>second</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo vero aliquid harum officia qui, delectus, veritatis deserunt inventore, iusto aliquam enim distinctio obcaecati porro tempore facere. Temporibus, iste debitis.
+                </p>
+                <p class="border p-3 shadow">
+                    <b>third    </b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo vero aliquid harum officia qui, delectus, veritatis deserunt inventore, iusto aliquam enim distinctio obcaecati porro tempore facere. Temporibus, iste debitis.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="student">
+                <b>Student</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque quas, ullam commodi, quasi quod quisquam hic aut dolore, vero assumenda laudantium quos modi? Voluptatum modi optio esse sed quis!
+            </div>
+            <div class="teacher">
+                <b>Teacher</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque quas, ullam commodi, quasi quod quisquam hic aut dolore, vero assumenda laudantium quos modi? Voluptatum modi optio esse sed quis!
+            </div>
+            <div class="student">
+                <b>Student</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque quas, ullam commodi, quasi quod quisquam hic aut dolore, vero assumenda laudantium quos modi? Voluptatum modi optio esse sed quis!
+            </div>
+            <div class="teacher">
+                <b>Teacher</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloremque quas, ullam commodi, quasi quod quisquam hic aut dolore, vero assumenda laudantium quos modi? Voluptatum modi optio esse sed quis!
+            </div>
+            <h1 id="heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, molestiae consequatur. Quas dolorum, blanditiis necessitatibus dicta veniam at ducimus natus vitae consectetur, tempore, aliquam saepe. Velit soluta quisquam animi nihil!</h1>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            console.log("Jquery is loaded....");
+            $("p").click(function(){
+                // alert("i am clicked....");
+                $(this).hide();
+            });
+
+            $(".student").dblclick(function(){
+                $(this).hide("slow");
+            });
+            $(".teacher").dblclick(function(){
+                $(this).hide(1000);
+            });
+
+            $("#heading").mouseenter(function(){
+                $(this).addClass("text-bg-primary");
+            });
+            $("#heading").mouseleave(function(){
+                $(this).removeClass("text-bg-primary");
+            });
+
+            
+        });
+    </script>
+</body>
+</html>
