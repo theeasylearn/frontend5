@@ -50,21 +50,21 @@
         </div>
         <div class="row mt-5">
             <div class="col-4">
-                <div class="card shadow text-bg-danger">
+                <div class="card shadow text-bg-danger" id="first">
                    <div class="card-body">
                         <h1>First div</h1>
                    </div>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card shadow text-bg-primary">
+                <div class="card shadow text-bg-primary" id="second">
                    <div class="card-body">
                         <h1>second div</h1>
                    </div>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card shadow text-bg-success ">
+                <div class="card shadow text-bg-success" id="third">
                    <div class="card-body">
                         <h1>third div</h1>
                    </div>
@@ -78,50 +78,90 @@
     <script>
         $(document).ready(function(){
             console.log("working");
-
+            var EffectTime = 2000; //2 second
             $("button").click(function()
             {
                 var ButtonId = $(this).attr("id"); //return id of the button on which user has clieked.
                 console.log(ButtonId);
                 if(ButtonId=="btnhide")
                 {
-                    
+                    $("#first").hide();
+                    $("#second").hide("slow");
+                    $("#third").hide(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnshow")
                 {
-                    
+                    $("#first").show();
+                    $("#second").show("slow");
+                    $("#third").show(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btntoggle")
                 {
-                    
+                    $("#first").toggle();
+                    $("#second").toggle("slow");
+                    $("#third").toggle(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnfadein")
                 {
-                    
+                    $("#first").fadeIn();
+                    $("#second").fadeIn("slow");
+                    $("#third").fadeIn(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnfadeout")
                 {
-                    
+                    $("#first").fadeOut();
+                    $("#second").fadeOut("slow");
+                    $("#third").fadeOut(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnfadetoggle")
                 {
-                    
+                    $("#first").fadeToggle();
+                    $("#second").fadeToggle("slow");
+                    $("#third").fadeToggle(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnfadeto")
                 {
-                    
+                    $("#first").fadeTo("slow",0.30);
+                    $("#second").fadeTo("slow",0.50);
+                    $("#third").fadeTo(EffectTime,0.75,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnslideup")
                 {
-                    
+                    $("#first").slideUp();
+                    $("#second").slideUp("slow");
+                    $("#third").slideUp(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnslidedown")
                 {
-                    
+                    $("#first").slideDown();
+                    $("#second").slideDown("slow");
+                    $("#third").slideDown(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
                 else if(ButtonId=="btnslidetoggle")
                 {
-                    
+                    $("#first").slideToggle();
+                    $("#second").slideToggle("slow");
+                    $("#third").slideToggle(EffectTime,function(){
+                        console.log("effect is over");
+                    });
                 }
             });
         });
